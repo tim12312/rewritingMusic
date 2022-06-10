@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="js/main.js"></script>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <html>
+        <body onload="init_soundBox()">
+            <center>
+            <details>
+            <summary>
+         What is this?
+            </summary>
+            First of all I'm a bit sorry and more importantly <b>I will take no responsebility if you destroy your Speakers or your hearing! So think about the frequencies first</b>
+            <br><br> <p>Now about this "project", this is a simple approach to use rewriting roles to stepwise create "music". </p>
+            <p>The howl thing is based on unique nodes, each node needs to be assigned with a rule that defines how the node will be replaced in the next step,
+             and each node is assigned to a frequents.(The most common frequencies can be looked up at: <a href="https://gist.github.com/marcgg/94e97def0e8694f906443ed5262e9cbb" target="_blank">here</a>)
+            </p>
+            With the step button you can run the rewriting model to create "music" and with the &#9654; button you can listen to your master pice. 
+            Moreover you can select different Oscilators(only the once js includes), you can set the speed(not during a audio output), change the volume and loop the output.
+            And if you really want to you can add multiply setups to create different "tracks" and paly them to gether. 
+              
+            
+        </details>
+
+            <button onclick="init_soundBox()">add soundBox</button>
+            <button onclick="playAll()">PlayAll</button>
+            <button onclick="stopAll()">StopAll</button>
+        </center>
+            <div id="workBench"></div>
+        </body>
+    </html>
+</html>
